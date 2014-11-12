@@ -47,6 +47,8 @@ document.addEventListener('DOMContentLoaded', function() {
         shapeTypeSel.appendChild(opt);
     });
 
+    factoryFn = _shapeTypes[shapeTypeSel.value];
+    
     shapeTypeSel.addEventListener('change', function() {
         factoryFn = _shapeTypes[this.value];
     });
